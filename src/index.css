@@ -1,0 +1,124 @@
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #0366d6;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  color: #0e64ed;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+}
+
+#filterInput {
+  background-image: url("img/search-icon.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 50px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-bottom: 12px;
+}
+
+.fa-map-marker {
+  font-size: 40px;
+  color: #0e64ed;
+}
+
+#content-table {
+  border-collapse: collapse;
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  /* display: flex; */
+}
+
+#content-table th {
+  background-color: #0e64ed;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 12px 15px;
+}
+
+#content-table td {
+  text-align: left;
+  padding: 12px 15px;
+}
+
+#content-table td.houseNo {
+  color: red;
+  font-weight: bold;
+}
+
+#content-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#content-table tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+#content-table tr:last-of-type {
+  border-bottom: 3px solid #0e64ed;
+}
+
+#content-table tr.header,
+#content-table tr:hover {
+  background-color: #ddd;
+  color: #0e64ed;
+}
+
+@media screen and (max-width: 992px) {
+  #filterInput {
+    width: 90%;
+    height: 60px;
+    background-position: 12px 15px;
+    font-size: 22px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    /* margin-top: 30px; */
+    margin-bottom: 12px;
+  }
+
+  #content-table {
+    border-collapse: collapse;
+    width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 25px;
+    /* margin-top: 50px; */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    /* display: flex; */
+  }
+
+  #content-table tr {
+    border-bottom: 2px solid #ddd;
+    margin: 10px;
+    height: 50px;
+  }
+}
