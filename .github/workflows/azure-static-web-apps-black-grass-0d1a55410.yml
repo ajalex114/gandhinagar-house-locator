@@ -22,19 +22,19 @@ jobs:
         uses: mingjun97/file-regex-replace@v1
         with:
           # regex to apply(regex)
-          regex: <!-- Placeholder -->
+          regex: '<!-- Placeholder -->'
           # flags of the regex
-          flags: # optional, default is g
+          flags: g # optional, default is g
           # replacement string
           replacement: <tr><td>1</td><td>name</td><td>location goes here</td></tr>
           # Files to be replaced(regex)
-          include: index.html
+          include: src\index.html
           # Files not to be replaced(regex)
-          exclude: # optional, default is .^
+          exclude: .^ # optional, default is .^
           # String file encoding
-          encoding: # optional, default is utf8
+          encoding: utf8 # optional, default is utf8
           # Path to the folder to be replaced
-          path: src/
+          path: .
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
