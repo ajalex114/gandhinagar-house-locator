@@ -28,7 +28,7 @@ jobs:
           # replacement string
           replacement: 'Pineapple City'
           # Files to be replaced(regex)
-          include: 'src\index.html'
+          include: '.*'
           # Files not to be replaced(regex)
           exclude: '.^' # optional, default is .^
           # String file encoding
