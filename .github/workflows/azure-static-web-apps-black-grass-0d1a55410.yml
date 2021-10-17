@@ -22,11 +22,11 @@ jobs:
         uses: mingjun97/file-regex-replace@v1
         with:
           # regex to apply(regex)
-          regex: 'Vazhakulam'
+          regex: '<!-- Placeholder -->'
           # flags of the regex
           flags: "g" # optional, default is g
           # replacement string
-          replacement: 'Pineapple City'
+          replacement: '<tr><td>1</td><td>name</td><td>location goes here</td></tr>'
           # Files to be replaced(regex)
           include: '.*'
           # Files not to be replaced(regex)
