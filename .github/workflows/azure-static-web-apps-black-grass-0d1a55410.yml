@@ -26,7 +26,7 @@ jobs:
           # flags of the regex
           flags: "g" # optional, default is g
           # replacement string
-          replacement: '<tr><td>1</td><td>name</td><td>location goes here</td></tr>'
+          replacement: '<tr><td>1</td><td>name</td><td>location goes here</td></tr><tr><td>2</td><td>Alen</td><td>2nd location goes here</td></tr>'
           # Files to be replaced(regex)
           include: '.*'
           # Files not to be replaced(regex)
